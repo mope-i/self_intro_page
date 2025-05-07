@@ -1,0 +1,66 @@
+body {
+    font-family: sans-serif;
+    background-color: #f0f8ff;
+    margin: 0;
+    padding: 0;
+    color: #333;
+  }
+  
+  header, footer {
+    background-color: #4682b4;
+    color: white;
+    text-align: center;
+    padding: 1em;
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  section {
+    margin-bottom: 20px;
+  }
+
+  /* フッター全体のスタイル（既にあるなら変更しなくてOK） */
+footer {
+  background-color: #4682b4;
+  text-align: center;
+  padding: 1em;
+}
+
+/* Xアイコンのスタイル */
+.x-icon {
+  display: inline-block;
+  background-color: #000;  /* 黒背景 */
+  color: #fff;             /* アイコンの白色 */
+  padding: 10px;
+  text-decoration: none;
+  border-radius: 0;        /* 角を丸めない */
+  font-size: 24px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+  
+  /* --- ここから追加：画面幅が600px以下のときの調整 --- */
+  @media (max-width: 600px) {
+    body {
+      font-size: 16px;
+    }
+  
+    main {
+      padding: 10px;
+    }
+  
+    header, footer {
+      padding: 0.5em;
+    }
+  
+    h1 {
+      font-size: 1.5em;
+    }
+  
+    h2 {
+      font-size: 1.2em;
+    }
+  }
+  
