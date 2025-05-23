@@ -31,7 +31,6 @@ footer {
 /* Xアイコンのスタイル */
 .x-icon {
   display: inline-block;
-  background-color: #000;  /* 黒背景 */
   color: #fff;             /* アイコンの白色 */
   padding: 10px;
   text-decoration: none;
@@ -39,6 +38,24 @@ footer {
   font-size: 24px;
   transition: background-color 0.3s, transform 0.3s;
 }
+
+.dotted-divider {
+  border: none;
+  border-top: 2px dotted #d1d0d0;
+  width: 100%;
+  margin: 2em auto;
+}
+
+.cycling-photo {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  display: block;
+  margin: 12px auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
 
   
   /* --- ここから追加：画面幅が600px以下のときの調整 --- */
