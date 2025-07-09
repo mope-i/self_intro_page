@@ -1,42 +1,55 @@
-body {
-    font-family: sans-serif;
-    background-color: #f0f8ff;
-    margin: 0;
-    padding: 0;
-    color: #333;
-  }
-  
-  header, footer {
-    background-color: #4682b4;
-    color: white;
-    text-align: center;
-    padding: 1em;
-  }
-  
-  main {
-    padding: 20px;
-  }
-  
-  section {
-    margin-bottom: 20px;
-  }
-
-  /* フッター全体のスタイル（既にあるなら変更しなくてOK） */
-footer {
-  background-color: #4682b4;
-  text-align: center;
-  padding: 1em;
+html {
+  font-size: 16px;
 }
 
-/* Xアイコンのスタイル */
-.x-icon {
-  display: inline-block;
-  color: #fff;             /* アイコンの白色 */
-  padding: 10px;
-  text-decoration: none;
-  border-radius: 0;        /* 角を丸めない */
-  font-size: 24px;
-  transition: background-color 0.3s, transform 0.3s;
+body {
+  font-family: sans-serif;
+  background-color: #f0f8ff;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  background: linear-gradient(to right, #4682b4, #6a5acd);
+  color: white;
+  text-align: center;
+  padding: 1.5em;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+  font-family: 'Your Chosen Font', sans-serif;
+  font-size: 2.5em;
+  margin: 0;
+}
+
+main {
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 20px;
+  background-color: white;
+  padding: 20px;
+  margin-bottom: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+p, li {
+  font-size: 1em;
+}
+
+.section-divider {
+  border: none;
+  border-top: 2px solid #ccc;
+  margin: 1em 0;
 }
 
 .dotted-divider {
@@ -56,28 +69,87 @@ footer {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+.photo-date {
+  text-align: center;
+  font-size: 0.9em;
+  color: #666;
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
 
-  
-  /* --- ここから追加：画面幅が600px以下のときの調整 --- */
-  @media (max-width: 600px) {
-    body {
-      font-size: 16px;
-    }
-  
-    main {
-      padding: 10px;
-    }
-  
-    header, footer {
-      padding: 0.5em;
-    }
-  
-    h1 {
-      font-size: 1.5em;
-    }
-  
-    h2 {
-      font-size: 1.2em;
-    }
+a {
+  color: #4682b4;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #5a9bd4;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 40px;
+}
+
+.footer-social-links {
+  margin-bottom: 15px;
+}
+
+.footer-social-links a {
+  color: white;
+  font-size: 1.8em;
+  margin: 0 12px;
+  transition: color 0.3s ease;
+  text-decoration: none;
+}
+
+.footer-social-links a:hover {
+  color: #a0a0a0;
+}
+
+footer p {
+  font-size: 0.9em;
+  margin: 0;
+}
+
+@media (max-width: 600px) {
+  html {
+    font-size: 14px;
   }
-  
+
+  h1 {
+    font-size: 1.5em;
+  }
+
+  h2 {
+    font-size: 1.2em;
+  }
+
+  p, li {
+    font-size: 0.95em;
+  }
+
+  main {
+    padding: 10px;
+  }
+
+  header, footer {
+    padding: 0.5em;
+  }
+
+  footer {
+    padding: 15px 0;
+    margin-top: 30px;
+  }
+  .footer-social-links a {
+    font-size: 1.5em;
+    margin: 0 10px;
+  }
+  footer p {
+    font-size: 0.8em;
+  }
+}
